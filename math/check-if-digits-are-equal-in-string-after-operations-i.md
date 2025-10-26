@@ -51,15 +51,14 @@ x ≡  a_1 \ (mod \ n_1) \\
 x ≡  a_k \ (mod \ n_k)$ 
 Where $a_0, a_1,...,a_k$ are pairwise coprime, then there exists a unique solution and the solution is 
 
-$$
-x \ = \ \sum a_i,N_i,z_i \ \% \ N
-$$
+$x \ = \ \sum a_i,N_i,z_i \ \% \ N$
+
 Where $N=  n_0 . n_1 ... n_k , \ N_i = \frac{N}{n_0 . n_1 ... n_{i - 1} . n_{i + 1} ... n_k}$ and $z_i = N^{-1}_i$
 
 In context of this problem, we have 
-$$ x ≡ a_0 \ (mod \ 2) \\
-\,x ≡ a_1 \ (mod \ 5)
-$$
+
+$x ≡ a_0 \ (mod \ 2) \\
+\,x ≡ a_1 \ (mod \ 5)$
 
 $2$ and $5$ are pair wise coprime and we need the final result $mod \ 10$, so this perfectly fits our needs. We get the equation $x = (5a_0 \ + \ 6a_1) \ \% \ 10$ for our problem by solving for $x$ using CRT.
 
