@@ -35,7 +35,7 @@ We have $10 = 2 * 5$. Both  $2$ and $5$ are prime, but $10$ is not.
 To find large 
 $\binom{n}{r}\ \% \ p$, if $p$ is a prime number, then we can break the large combination into parts and calculate the final result.
 
-$\binom{n}{r} \ \% \ p = ( \ \binom{n_0}{r_0} \ * \ \binom{n_1}{r_1} \ * \ \binom{n_1}{r_2} \ ... \ \binom{n_k}{r_k}  \ ) \ \% \ p$
+$`\binom{n}{r} \ \% \ p = ( \ \binom{n_0}{r_0} \ * \ \binom{n_1}{r_1} \ * \ \binom{n_1}{r_2} \ ... \ \binom{n_k}{r_k}  \ ) \ \% \ p`$
 
 Where $n_0,n_1,...n_k$ are coefficients of the $base \ p$ equivalent of $n$ and Where $r_0,r_1...r_k$ are coefficients of the $base \ p$ equivalent of $r$.
 
