@@ -7,13 +7,14 @@ Initially I was clueless about how to solve this. Then went through multiple exp
 # Approach
 <!-- Describe your approach to solving the problem. -->
 The first question that comes to mind is how to build a thought process to this problem. If we solve a few examples by hand and simulate the process we get to know we need to just multiply each digit is contributing a finite number of times to the final result. Now how to find the contribution by each digit. 
-$$ \\
+$\\
 1\:4\: 6\: 4\:\, 1 \\
 \:1\: 3\:\, 3\:\, 1 \\
 \,\:\:1\:\, 2\:\, 1 \\
 \,\,\:\:\:1\:\, 1 \\
 \,\,\:\:\:\:\,1
-$$
+$
+
 Here there a final result which contibutes 1 times to the solution. It came from 1 contribution from each of 2 digits from earlier operation. If we go to the next layer, the leftmost and rightmost have just 1 contribution to the layer below and the middle digit contibutes once to each digit, so 2 contributions from the middle digit. If we check this until we reach the size of original problem  we can observe that each digit has a coffecient that corresponds to a coefficient in binomial expansion of $(1 + x)^{n - 1}$.
 
 Just to clarify, we can prove that 
@@ -34,9 +35,7 @@ We have $10 = 2 * 5$. Both  $2$ and $5$ are prime, but $10$ is not.
 To find large 
 $\binom{n}{r}\ \% \ p$, if $p$ is a prime number, then we can break the large combination into parts and calculate the final result.
 
-$$
-\binom{n}{r} \ \% \ p = ( \ \binom{n_0}{r_0} \ * \ \binom{n_1}{r_1} \ * \ \binom{n_1}{r_2} \ ... \ \binom{n_k}{r_k}  \ ) \ \% \ p
-$$
+$\binom{n}{r} \ \% \ p = ( \ \binom{n_0}{r_0} \ * \ \binom{n_1}{r_1} \ * \ \binom{n_1}{r_2} \ ... \ \binom{n_k}{r_k}  \ ) \ \% \ p$
 
 Where $n_0,n_1,...n_k$ are coefficients of the $base \ p$ equivalent of $n$ and Where $r_0,r_1...r_k$ are coefficients of the $base \ p$ equivalent of $r$.
 
@@ -44,13 +43,12 @@ We calculate $\binom{n}{r} \ \% \ 2$ and $\binom{n}{r} \ \% \ 5$ and store their
 
 
 **Chinese Remainder Theorem** states that,
+
 Given,
-$$
-x ≡  a_0 \ (mod \ n_0) \\
+$\\ x ≡  a_0 \ (mod \ n_0) \\
 x ≡  a_1 \ (mod \ n_1) \\
 .\\.\\
-x ≡  a_k \ (mod \ n_k)
-$$ 
+x ≡  a_k \ (mod \ n_k)$ 
 Where $a_0, a_1,...,a_k$ are pairwise coprime, then there exists a unique solution and the solution is 
 
 $$
