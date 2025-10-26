@@ -9,7 +9,7 @@ Initially I was clueless about how to solve this. Then went through multiple exp
 The first question that comes to mind is how to build a thought process to this problem. If we solve a few examples by hand and simulate the process we get to know we need to just multiply each digit is contributing a finite number of times to the final result. Now how to find the contribution by each digit. 
 
 $$
-1\:4\: 6\: 4\:\, 1 \\
+1 \: 4\: 6\: 4\:\, 1 \\
 \:1\: 3\:\, 3\:\, 1 \\
 \,\:\:1\:\, 2\:\, 1 \\
 \,\,\:\:\:1\:\, 1 \\
