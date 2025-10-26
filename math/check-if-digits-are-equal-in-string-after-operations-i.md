@@ -47,8 +47,9 @@ We calculate $\binom{n}{r} \ \% \ 2$ and $\binom{n}{r} \ \% \ 5$ and store their
 Given,
 $\\ x ≡  a_0 \ (mod \ n_0) \\
 x ≡  a_1 \ (mod \ n_1) \\
-.\\.\\
+\\
 x ≡  a_k \ (mod \ n_k)$ 
+
 Where $a_0, a_1,...,a_k$ are pairwise coprime, then there exists a unique solution and the solution is 
 
 $x \ = \ \sum a_i,N_i,z_i \ \% \ N$
