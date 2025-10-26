@@ -8,7 +8,7 @@ Initially I was clueless about how to solve this. Then went through multiple exp
 <!-- Describe your approach to solving the problem. -->
 The first question that comes to mind is how to build a thought process to this problem. If we solve a few examples by hand and simulate the process we get to know we need to just multiply each digit is contributing a finite number of times to the final result. Now how to find the contribution by each digit. 
 
-$\quad1 \quad 4\quad 6\quad 4\quad 1\\\\\quad\quad1\quad3\quad 3\quad 1 \\\\ \quad\quad\quad1\quad 2\quad1 \\\\ \quad\quad\quad\quad1\quad1 \\\\ \quad\quad\quad\quad\quad1$
+$$\quad1 \quad 4\quad 6\quad 4\quad 1\\\\\quad\quad1\quad3\quad 3\quad 1 \\\\ \quad\quad\quad1\quad 2\quad1 \\\\ \quad\quad\quad\quad1\quad1 \\\\ \quad\quad\quad\quad\quad1$$
 
 Here there a final result which contibutes 1 times to the solution. It came from 1 contribution from each of 2 digits from earlier operation. If we go to the next layer, the leftmost and rightmost have just 1 contribution to the layer below and the middle digit contibutes once to each digit, so 2 contributions from the middle digit. If we check this until we reach the size of original problem  we can observe that each digit has a coffecient that corresponds to a coefficient in binomial expansion of $(1 + x)^{n - 1}$.
 
